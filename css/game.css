@@ -15,7 +15,7 @@
 }
 #active-game {
   margin: 2rem 0;
-  /* display: none; */
+  display: none;
 }
 #game-board {
   list-style: none;
