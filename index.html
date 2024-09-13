@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-T-T Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/config.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <script src="game.js" defer></script>
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+      <h1>Tic, Tac, Toe Game</h1>
+      <p>
+        Built with HTML, CSS, JavaScript and of course- with love
+        <span id="heart" style="color: red">❤</span>
+      </p>
+    </header>
+    <main>
+      <aside id="config-overlay">
+        <h3>Choose your player name</h3>
+        <form>
+          <div id="config-name">
+            <label for="playername">Player:</label>
+            <input type="text" name="playername" id="playername" autofocus>
+          </div>
+          <div id="config-btn">
+            <button type="reset" class="btn" id="config-cancel">Clear</button>
+            <button type="submit" class="btn" id="config-submit">Confirm</button>
+          </div>
+        </form>
+        <p id="error"></p>
+      </aside>
+      <section id="game-players">
+        <h3>Let's have fun!</h3>
+        <ol>
+          <li>
+            <article>
+              <h3>Player 1</h3>
+              <p id="player1"></p>
+              <p>X</p>
+              <button type="button" id="edit-player1" data-playerid="1">Edit</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Player 2</h3>
+              <p id="player2"></p>
+              <p>O</p>
+              <button type="button" id="edit-player2" data-playerid="2">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button type="button" id="start" class="btn">Start a New Game</button>
+        <aside id="winner-overlay">
+          <h3>You won <span id="champion">PLAYERNAME</span></h3>
+          <div id="btn-over">
+            <button type="reset" class="btn">Exit</button>
+            <button type="button" id="start" class="btn">Start a New Game</button>
+          </div>
+        </aside>
+      </section>
+      <section id="active-game">
+        <h3>It's your turn <span id="active-player">PLAYERNAME</span></h3>
+        <ol id="game-board">
+          <li data-row="1" data-col="1"></li>
+          <li data-row="1" data-col="2"></li>
+          <li data-row="1" data-col="3"></li>
+          <li data-row="2" data-col="1"></li>
+          <li data-row="2" data-col="2"></li>
+          <li data-row="2" data-col="3"></li>
+          <li data-row="3" data-col="1"></li>
+          <li data-row="3" data-col="2"></li>
+          <li data-row="3" data-col="3"></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

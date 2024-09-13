@@ -1,0 +1,81 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #477aaa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+header, #winner-overlay {
+  background-color: #02213d;
+  color: white;
+  margin: 2rem auto;
+  padding: 1.5rem 0;
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: 1px 1px 8px rgba(90, 212, 90, 0.6);
+  border-radius: 6px;
+}
+header p {
+  color: bisque;
+  margin-top: 0.5rem;
+}
+#game-players {
+  background-color: linear-gradient(45deg, #9a1334, #088cf3);
+  margin: 2.5rem auto;
+  color: aliceblue;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 30rem;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.7);
+  border-radius: 10px;
+}
+#game-players ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#game-players li {
+  background-color: burlywood;
+  margin: 1.5rem 1rem;
+  padding: 2rem 0.5rem;
+  width: 100%;
+  max-width: 10rem;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.7);
+  border-radius: 6px;
+}
+#game-players article {
+  text-align: center;
+}
+article p {
+  padding: 0.5rem 0;
+}
+article button {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+}
+article button:hover{
+  color: #9a1334;
+}
+.btn {
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#start {
+  background-color: #02213d;
+  color: aliceblue;
+}
+#start:hover{
+  background-color: #125996;
+  color: black;
+}
